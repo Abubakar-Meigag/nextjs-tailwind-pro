@@ -3,7 +3,7 @@ import { BsFacebook, BsTwitter, BsInstagram, BsLinkedin } from "react-icons/bs";
 
 const Header = () => {
   return (
-    <div className="border-b border-gray-300 mt-2 hidden sm:block">
+    <div className="border-b border-gray-300 hidden sm:block">
       <div className="container py-5">
         <div className="flex justify-between item-center">
           <div className="hidden lg:flex gap-1">
@@ -13,7 +13,7 @@ const Header = () => {
             <div className="header_top__icon__wrapper"><BsLinkedin /></div>
           </div>
           
-          <div className='text-gray-500 text-[14px]'>
+          <div className='text-gray-500 text-[18px]'>
             <b>FREE SHIPPING</b> THIS WEEK ORDER OVER - $55
           </div>
           

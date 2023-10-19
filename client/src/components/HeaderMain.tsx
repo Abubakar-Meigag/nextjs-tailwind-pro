@@ -1,6 +1,7 @@
 import React from 'react'
+import Image from "next/image";
+import pic1 from "../app/image/images-test.jpeg";
 import { BsSearch } from 'react-icons/bs'
-import { BiUser } from "react-icons/bi";
 import { FiHeart } from "react-icons/fi";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 
@@ -23,25 +24,51 @@ const HeaderMain = () => {
                     size={20}
                 />
             </div>
+        <div className='hidden lg:flex gap-4 text-gray-500 text-[30px]'>
             
-            <div className='hidden lg:flex gap-4 text-gray-500 text-[30px]'>
-                <BiUser />
                 <div className='relative'>
-                    <FiHeart />
+                    <FiHeart size={45} />
                     <div 
-                        className='bg-red-500 rounded-full absolute top-0 right-0 w-[18px] h-[18px] text-[12px] text-white grid place-items-center translate-x-1 translate-y-1'
+                        className='bg-red-500 rounded-full absolute top-0 right-0 w-[23px] h-[22px] text-[12px] text-white grid place-items-center translate-x-1 translate-y-1'
                         >
                         0
                     </div>
                 </div>
                 <div className='relative'>
-                    <HiOutlineShoppingBag />
+                      <HiOutlineShoppingBag size={45} />
                     <div 
-                        className='bg-red-500 rounded-full absolute top-0 right-0 w-[18px] h-[18px] text-[12px] text-white grid place-items-center translate-x-1 translate-y-1'
+                        className='bg-red-500 rounded-full absolute top-0 right-0 w-[23px] h-[22px] text-[12px] text-white grid place-items-center translate-x-1 translate-y-1'
                         >
                         0
                     </div>
                 </div>
+                
+            <div className="dropdown dropdown-end items-center">
+              <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                <div className="w-10 rounded-full">
+                    <Image src={pic1} alt="Profile image" />
+                </div>
+              </label>
+
+              <ul
+                tabIndex={0}
+                className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
+                >
+                <li>
+                    <a className="justify-between">
+                    Profile
+                    <span className="badge">New</span>
+                    </a>
+                </li>
+                <li>
+                    <a>Settings</a>
+                </li>
+                <li>
+                    <a>Logout</a>
+                </li>
+              </ul>
+            </div>
+            
             </div>
         </div>
     </div>
