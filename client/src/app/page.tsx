@@ -1,7 +1,6 @@
 import ImageCarousel from "@/components/ImageCarousel";
 import NewProducts from "@/components/NewProducts";
-// import {ProductCard} from "@/components/ProductCard";
-// import Image from "next/image";
+import Testimonial from "@/components/Testimonial";
 
 
 export default function Home() {
@@ -9,6 +8,7 @@ export default function Home() {
     <main >
       <ImageCarousel />
       <NewProducts />
+      <Testimonial/>
     </main>
   )
 }
