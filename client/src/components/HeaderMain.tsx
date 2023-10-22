@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from "next/image";
-import pic1 from "../app/image/images-test.jpeg";
+import pic1 from "../app/image/user.jpg";
 import { BsSearch } from 'react-icons/bs'
 import { FiHeart } from "react-icons/fi";
 import { HiOutlineShoppingBag } from "react-icons/hi";
@@ -26,7 +26,7 @@ const HeaderMain = () => {
             </div>
         <div className='hidden lg:flex gap-4 text-gray-500 text-[30px]'>
             
-                <div className='relative'>
+                <div className='relative cursor-pointer'>
                     <FiHeart size={45} />
                     <div 
                         className='bg-red-500 rounded-full absolute top-0 right-0 w-[23px] h-[22px] text-[12px] text-white grid place-items-center translate-x-1 translate-y-1'
@@ -34,7 +34,7 @@ const HeaderMain = () => {
                         0
                     </div>
                 </div>
-                <div className='relative'>
+                <div className='relative cursor-pointer'>
                       <HiOutlineShoppingBag size={45} />
                     <div 
                         className='bg-red-500 rounded-full absolute top-0 right-0 w-[23px] h-[22px] text-[12px] text-white grid place-items-center translate-x-1 translate-y-1'
