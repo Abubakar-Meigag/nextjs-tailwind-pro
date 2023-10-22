@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import HeaderMain from "@/components/HeaderMain";
 import Home from "./page";
 import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
         <HeaderMain />
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );
