@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from "next/image";
-import pic1 from "../app/image/user.jpg";
+import pic1 from "/public/image/user.jpg";
 import { BsSearch } from 'react-icons/bs'
 import { FiHeart } from "react-icons/fi";
 import { HiOutlineShoppingBag } from "react-icons/hi";

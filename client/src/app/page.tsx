@@ -1,9 +1,13 @@
+import ImageCarousel from "@/components/ImageCarousel";
+import NewProducts from "@/components/NewProducts";
+// import {ProductCard} from "@/components/ProductCard";
 
 
 export default function Home() {
   return (
     <main >
-        <h1>Hello Beko</h1>
+      <ImageCarousel />
+      <NewProducts />
     </main>
   )
 }
