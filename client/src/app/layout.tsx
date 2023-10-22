@@ -22,11 +22,17 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme={"cupcake" || "dark"}>
       <body className={inter.className}>
-        <Header />
-        <HeaderMain />
-        <NavBar />
-        {children}
-        <Footer />
+        <div className="flex flex-col min-h-screen">
+          <div className="flex-grow">
+            <div className="container mx-auto">
+              <Header />
+              <HeaderMain />
+              <NavBar />
+              {children}
+            </div>
+          </div>
+          <Footer />
+        </div>
       </body>
     </html>
   );

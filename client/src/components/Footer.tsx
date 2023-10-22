@@ -1,9 +1,11 @@
 import React from 'react'
 
+// bg-blackish text-gray-500 text-center py-4 pb-16 md:pb-4
+
 const Footer = () => {
   return (
     <div>
-      <footer className="footer p-10 bg-pink-50">
+      <footer className="footer p-10 bg-pink-50 mt-auto">
         <aside>
           <svg
             width="50"

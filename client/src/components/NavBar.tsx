@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import { NavigateAction } from 'next/dist/client/components/router-reducer/router-reducer-types'
 
 const NavBar = () => {
   return (
